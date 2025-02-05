@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+link[rel="icon"] {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Header Styles */
+header {
+  background: #195658;
+  color: white;
+  display: flex;
+  box-shadow: 20rem #333 solid;
+  position: fixed;
+}
+
+header img {
+  width: 12.5%;
+  height: 12.5%;
+  margin-right: 25rem;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  padding-left: 100px;
+  margin-top: 1rem;
+}
+
+nav ul li a {
+  color: #0c2829;
+  font-weight: bolder;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #c5c5c5;
+  color: #333;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero h2 {
+  font-size: 3.5rem;
+  font-family: "ICA Rubrik";
+}
+
+.hero .writeup p {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  width: 60ch;
+}
+
+.hero .writeup h2,
+.hero .writeup p,
+#donate-btn {
+  margin-left: 23rem;
+  text-align: right;
+}
+
+#donate-btn {
+  background: #ff5722;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: 0.3s;
+  display: block;
+  width: fit-content;
+}
+
+#donate-btn:hover {
+  background: #7c2f18;
+}
+
+#hero_img {
+  margin-top: -900px;
+  margin-right: 930px;
+  width: 305.5px;
+  height: 358.8px;
+}
+
+/* About Section */
+
+/* Footer Styles */
+footer {
+  background: #333;
+  color: white;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+/* Responsive Styles */
+
+@media screen and (min-width: 768px) {
+  .hero .writeup h2,
+  .hero .writeup p {
+    margin-left: auto;
+  }
+}
