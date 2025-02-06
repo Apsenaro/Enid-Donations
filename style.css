@@ -1,17 +1,11 @@
 /* General Styles */
 body {
   font-family: "Inter", sans-serif;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   background-color: #f4f4f4;
   text-align: center;
   box-sizing: border-box;
-}
-
-link[rel="icon"] {
-  width: auto;
-  height: auto;
-  object-fit: contain;
 }
 
 /* Header Styles */
@@ -19,14 +13,21 @@ header {
   background: #195658;
   color: white;
   display: flex;
-  box-shadow: 20rem #333 solid;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 header img {
-  width: 12.5%;
-  height: 12.5%;
-  margin-right: 25rem;
+  width: 150px;
+  height: auto;
+  margin-left: 20px;
 }
 
 nav {
@@ -36,11 +37,12 @@ nav {
 nav ul {
   display: flex;
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li {
-  padding-left: 100px;
-  margin-top: 1rem;
+  padding: 0 20px;
 }
 
 nav ul li a {
@@ -60,27 +62,25 @@ nav ul li a:hover {
 .hero {
   background-color: #c5c5c5;
   color: #333;
-  padding: 100px 20px;
+  padding: 120px 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .hero h2 {
-  font-size: 3.5rem;
+  font-size: 56px;
   font-family: "ICA Rubrik";
+  margin-bottom: 20px;
 }
 
 .hero .writeup p {
-  font-size: 1.4rem;
+  font-size: 22px;
   margin-bottom: 20px;
-  width: 60ch;
-}
-
-.hero .writeup h2,
-.hero .writeup p,
-#donate-btn {
-  margin-left: 23rem;
-  text-align: right;
+  max-width: 800px;
+  text-align: center;
 }
 
 #donate-btn {
@@ -88,11 +88,10 @@ nav ul li a:hover {
   color: white;
   padding: 12px 25px;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 19px;
   border-radius: 5px;
   transition: 0.3s;
-  display: block;
-  width: fit-content;
+  display: inline-block;
 }
 
 #donate-btn:hover {
@@ -100,27 +99,37 @@ nav ul li a:hover {
 }
 
 #hero_img {
-  margin-top: -900px;
-  margin-right: 930px;
-  width: 305.5px;
-  height: 358.8px;
+  margin-top: 20px;
+  width: 300px;
+  height: auto;
 }
-
-/* About Section */
 
 /* Footer Styles */
 footer {
   background: #333;
   color: white;
-  padding: 10px 0;
-  margin-top: 20px;
+  padding: 20px 0;
+  margin-top: 40px;
+  text-align: center;
 }
 
 /* Responsive Styles */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
 
-@media screen and (min-width: 768px) {
-  .hero .writeup h2,
-  .hero .writeup p {
-    margin-left: auto;
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    padding: 10px 0;
+  }
+
+  .hero {
+    padding: 80px 20px;
   }
 }
