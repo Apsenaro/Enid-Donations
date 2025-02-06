@@ -7,6 +7,13 @@ body {
   box-sizing: border-box;
 }
 
+#home,
+#about,
+#testimonials,
+#contact {
+  text-align: center;
+}
+
 /* Header Styles */
 header {
   background: #195658;
@@ -148,7 +155,8 @@ footer {
     font-size: 8px;
   }
 
-  .hero h2, .hero .writeup p{
+  .hero h2,
+  .hero .writeup p {
     margin: 80px 40px;
     text-align: center;
   }
