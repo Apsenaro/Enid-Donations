@@ -22,7 +22,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 10px #0000004d;
   position: fixed;
   width: 100%;
   top: 0;
@@ -44,11 +44,11 @@ nav ul {
   display: flex;
   list-style-type: none;
   padding: 0;
-  margin: 0;
 }
 
 nav ul li {
   padding: 0 20px;
+  margin-right: 20px;
 }
 
 nav ul li a {
@@ -76,33 +76,37 @@ nav ul li a:hover {
 }
 
 .hero h2 {
-  font-size: 56px;
+  font-size: 45px;
   font-family: "ICA Rubrik";
   margin-bottom: 20px;
-  text-align: right;
 }
 
 .hero h2,
 .hero .writeup p {
-  margin-left: 500px;
+  text-align: left;
+  margin-right: 40px;
+  margin-left: 473px;
 }
 
 .hero .writeup p {
   font-size: 22px;
   margin-bottom: 20px;
   max-width: 800px;
-  text-align: right;
+  text-align: left;
 }
 
 #donate-btn {
+  margin-right: 40px;
   background: #ff5722;
   color: white;
-  padding: 12px 40px;
-  margin-left: 1000px;
+  padding: 12px 30px;
+  margin-left: 960px;
+  margin-top: -10px;
   text-decoration: none;
-  font-size: 19px;
+  font-size: 15px;
   border-radius: 5px;
   transition: 0.3s;
+  /* margin-top: 210px; */
 }
 
 #donate-btn:hover {
@@ -110,11 +114,25 @@ nav ul li a:hover {
 }
 
 #hero_img {
-  margin-top: -500px;
-  width: 300px;
+  margin-top: -350px;
+  width: 307px;
   height: auto;
   margin-left: 20px;
   margin-right: 900px;
+}
+
+#wwd {
+  text-align: right;
+  margin-left: 50%;
+  margin-right: 40px;
+  max-width: calc(50% - 40px);
+}
+
+#hws{
+  text-align: left;
+  margin-right: 50%;
+  margin-left: 30px;
+  max-width: calc(50% - 30px);
 }
 
 /* Footer Styles */
