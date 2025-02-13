@@ -21,7 +21,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0px 4px 10px #0000004d;
   position: fixed;
   width: 100%;
@@ -52,7 +52,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #0c2829;
+  color: #fff;
   font-weight: bolder;
   text-decoration: none;
   transition: 0.3s ease-in-out;
@@ -97,8 +97,8 @@ nav ul li a:hover {
 
 #donate-btn {
   margin-right: 40px;
-  background: #ff5722;
-  color: white;
+  background: #9e2b25;
+  color: #fff;
   padding: 12px 30px;
   margin-left: 960px;
   margin-top: -10px;
@@ -121,18 +121,43 @@ nav ul li a:hover {
   margin-right: 900px;
 }
 
-#wwd {
-  text-align: right;
-  margin-left: 50%;
-  margin-right: 40px;
-  max-width: calc(50% - 40px);
+/* About Section */
+
+#wwdimg, #ogimg {
+  display: flex;
+  justify-content: right;
 }
 
-#hws{
+#hwsimg {
+  display: flex;
+  justify-content: left;
+}
+
+#hwsimg img {
+  margin-left: 10px;
+}
+
+#wwdimg img, #ogimg img{
+  margin-right: 10px;
+}
+
+#wwd, #hws, #og {
+  margin-top: 46px;
+  color: #0C2829;
+}
+
+#wwd,
+#og {
+  text-align: right;
+  margin-left: 40%;
+  margin-right: 40px;
+  max-width: calc(60% - 40px);
+}
+
+#hws {
   text-align: left;
-  margin-right: 50%;
   margin-left: 30px;
-  max-width: calc(50% - 30px);
+  max-width: calc(60% - 30px);
 }
 
 /* Footer Styles */
