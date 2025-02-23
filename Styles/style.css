@@ -26,23 +26,21 @@ body {
 /* Header Styles */
 header {
   background: #195658;
-  color: #fff;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  box-shadow: 0px 4px 10px #0000004d;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
   top: 0;
-  left: 0;
   z-index: 1000;
 }
 
 header img {
   width: 150px;
   height: auto;
-  margin-left: 20px;
 }
 
 nav {
@@ -52,35 +50,37 @@ nav {
 nav ul {
   display: flex;
   list-style-type: none;
+  margin: 0;
   padding: 0;
 }
 
 nav ul li {
-  padding: 0 20px;
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
 nav ul li a {
-  color: #fff;
-  font-weight: bolder;
+  color: white;
+  font-weight: bold;
   text-decoration: none;
-  transition: 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 /* Hero Section */
 .hero {
   background-color: #c5c5c5;
   color: #333;
-  padding: 120px 20px;
+  padding: 150px 20px 50px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 60px;
 }
 
 .hero h2 {
-  font-size: 45px;
-  font-family: "ICA Rubrik";
+  font-size: 2.5rem;
+  font-family: "ICA Rubrik", sans-serif;
   margin-bottom: 20px;
 }
 
@@ -91,35 +91,24 @@ nav ul li a {
   margin-left: 473px;
 }
 
-/* .hero .writeup p {
-  font-size: 22px;
-  margin-bottom: 20px;
+.hero .writeup p {
+  font-size: 1.125rem;
   max-width: 800px;
-  text-align: left;
-} */
-.hero .writeup p{
-  font-size: 22px;
-  max-width: 800px;
-  margin: auto;
-  text-align: left;
+  margin-bottom: 30px;
 }
 
 #donate-btn {
-  margin-right: 40px;
-  background: #9e2b25;
-  color: #fff;
-  padding: 12px 30px;
-  margin-left: 960px;
-  margin-top: -10px;
+  background: #890625;
+  color: white;
+  padding: 12px 25px;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 1rem;
   border-radius: 5px;
-  transition: 0.3s;
-  /* margin-top: 210px; */
+  transition: background 0.3s;
 }
 
 #donate-btn:hover {
-  background: #7c2f18;
+  background: #ac082e;
 }
 
 #hero_img {
@@ -174,12 +163,21 @@ nav ul li a {
 }
 
 /* Gallery Section */
+
 .image-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  gap: 10px;
-  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 20px;
+}
+
+.image-grid img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .img {
@@ -214,6 +212,10 @@ nav ul li a {
 }
 
 /* Testimonials Section */
+#testimonials {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+}
 
 .testimonial_wrapper {
   background-color: #ffffff;
@@ -273,15 +275,18 @@ button#prev {
 .testimonial-container p {
   color: #8c8c90;
   text-align: center;
-  font-size: 14.4px;
   line-height: 32px;
   letter-spacing: 0.8px;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto 20px;
 }
 
 .testimonial-container h3 {
   color: #0c2829;
-  font-size: 16px;
   text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
 
 .testimonial-container h6 {
@@ -294,12 +299,12 @@ button#prev {
 
 /* Contacts Section */
 #contact {
-  padding-top: 25px;
+  padding: 50px 20px;
   background-color: #890625;
   color: #fff;
 }
 
-form {
+#contact form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -310,10 +315,11 @@ form {
 
 input, textarea {
   width: 100%;
-  padding: 20px 50px;
-  border: none;
+  max-width: 500px;
+  padding: 10px;
+  border: 1px solid #ccc;
   color: #333;
-  border-radius: 30px;
+  border-radius: 5px;
   background-color: #fff;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 10px;
@@ -325,14 +331,20 @@ label {
 }
 
 form button {
+  background: #195658;
+  color: #fff;
   padding: 10px 20px;
   border: none;
-  font-weight: bold;
-  color: #333;
-  border-radius: 30px;
+  border-radius: 5px;
+  font-weight: bold;  
   background-color: #fff;
   font-family: 'Poppins', sans-serif;
-  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #14494a;
 }
 
 /* Footer Styles */
@@ -340,15 +352,16 @@ footer {
   background: #333;
   color: #fff;
   padding: 20px 0;
-  margin-top: 40px;
+  margin-top: 20px;
   text-align: center;
 }
 
 /* Responsive Styles */
-@media screen and (max-width: 768px) {
+/* Responsive Styles */
+@media (max-width: 768px) {
   header {
     flex-direction: column;
-    align-items: center;
+    padding: 10px;
   }
 
   nav ul {
@@ -357,31 +370,31 @@ footer {
   }
 
   nav ul li {
-    padding: 10px 0;
+    margin: 10px 0;
   }
 
-  nav ul li,
-  header img {
-    margin-right: 35px;
+  .hero {
+    padding: 100px 20px 30px;
   }
 
   .hero h2 {
-    font-size: 22px;
+    font-size: 2rem;
   }
 
   .hero p {
-    font-size: 8px;
+    font-size: 1rem;
   }
 
-  .hero h2,
-  .hero .writeup p {
-    margin: 80px 40px;
-    text-align: center;
+  .gallery {
+    flex-direction: column;
+    align-items: center;
   }
-}
 
-@media screen and (max-width: 650px) {
-  .testimonial_wrapper {
-    font-size: 14px;
+  .testimonials h3 {
+    font-size: 1.5rem;
+  }
+
+  .testimonials p {
+    font-size: 0.875rem;
   }
 }
