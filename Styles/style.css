@@ -5,6 +5,7 @@ body {
   padding: 0px;
   background-color: #f4f4f4;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 #home,
@@ -90,10 +91,16 @@ nav ul li a {
   margin-left: 473px;
 }
 
-.hero .writeup p {
+/* .hero .writeup p {
   font-size: 22px;
   margin-bottom: 20px;
   max-width: 800px;
+  text-align: left;
+} */
+.hero .writeup p{
+  font-size: 22px;
+  max-width: 800px;
+  margin: auto;
   text-align: left;
 }
 
@@ -295,26 +302,37 @@ button#prev {
 form {
   display: flex;
   flex-direction: column;
-  align-items: right;
-}
-
-label {
-  font-size: 20px;
-  margin-right: -450px;
-  margin-left: 50%;
-  margin-bottom: 20px;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
 }
 
 input, textarea {
+  width: 100%;
   padding: 20px 50px;
   border: none;
-  margin-right: 40px;
-  margin-left: 50%;
   color: #333;
   border-radius: 30px;
   background-color: #fff;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 10px;
+}
+
+label {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+form button {
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  color: #333;
+  border-radius: 30px;
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
 }
 
 /* Footer Styles */
@@ -363,7 +381,7 @@ footer {
 }
 
 @media screen and (max-width: 650px) {
-  .wrapper {
+  .testimonial_wrapper {
     font-size: 14px;
   }
 }

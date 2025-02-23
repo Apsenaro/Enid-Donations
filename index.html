@@ -8,9 +8,8 @@
       rel="shortcut icon"
       href="./images/logo.png"
       type="image/x-icon"
-      style="rotate: 90deg"
     />
-    <link rel="stylesheet" href="Styles\style.css" />
+    <link rel="stylesheet" href="Styles/style.css" />
     <script src="./script.js" defer></script>
   </head>
   <body>
@@ -193,14 +192,13 @@
       <!-- Contact Section -->
       <section id="contact">
         <h2>Contact Us</h2>
-        <form action="">
+        <form action="" method="post">
           <label for="name">Your Name</label>
           <input
             type="text"
             id="name"
             placeholder="Enter your name"
             autofocus
-            important
           />
           <label for="email">Your Email</label>
           <input
@@ -214,7 +212,8 @@
             id="message"
             placeholder="Enter your message"
             important
-          ></textarea> 
+          ></textarea>
+          <button type="submit" onclick="alert(`Your message will make us better, thank you.`); return false;">Submit</button>
         </form>
       </section>
     </main>
