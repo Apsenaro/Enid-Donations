@@ -52,8 +52,8 @@ let displayTestimonial = () => {
   testimonialContainer.innerHTML = `
   <img src=${testimonials[cslide].image}>
   <h6>${testimonials[cslide].title}</h6>
-    <p>${testimonials[cslide].testimonial}</p>
-    <h3>${testimonials[cslide].name}</h3>
+  <p>${testimonials[cslide].testimonial}</p>
+  <h3>${testimonials[cslide].name}</h3>
   `;
 };
 window.onload = displayTestimonial;
